@@ -1,0 +1,151 @@
+html {
+  background: linear-gradient(
+    to right bottom,
+    rgba(254, 185, 95, 0.212),
+    rgba(45, 200, 246)
+  );
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.title.maintext {
+  padding-top: 275px;
+  color: #2431ae;
+  margin: 10px;
+  font-size: 5rem;
+}
+
+.title.subtext {
+  color: #11a9cb;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-size: 2.5rem;
+  font-style: thin;
+}
+
+.btn {
+  background-color: #2431ae;
+  border: solid white 1px;
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.sun-img {
+  scale: 90%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.sun-ray {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -100px;
+  left: -100px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: -1;
+}
+.r-one {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  animation: ray2 5s infinite;
+}
+.r-two {
+  width: 325px;
+  height: 325px;
+  opacity: 1;
+  animation: ray3 7s infinite;
+}
+.r-three {
+  width: 310px;
+  height: 310px;
+  opacity: 1;
+  animation: ray4 4s infinite;
+}
+.r-four {
+  width: 350px;
+  height: 350px;
+  opacity: 1;
+  animation: ray5 6s infinite;
+}
+
+@keyframes ray2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes ray3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes ray4 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes ray5 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.wave-1 {
+  position: absolute;
+  bottom: 0;
+}
+
+.wave-2 {
+  position: absolute;
+  bottom: 0;
+}
+
+.wave-3 {
+  position: absolute;
+  bottom: 0;
+}
