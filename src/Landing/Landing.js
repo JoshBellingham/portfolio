@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Landing.css";
 
+
 export default class Landing extends Component {
   render() {
     return (
@@ -20,9 +21,9 @@ export default class Landing extends Component {
           <div className="sun-ray r-four"></div>
         </div>
         <div className="waves">
-          <img className="wave-1" src="Wave 1.png" alt="Wave"></img>
-          <img className="wave-2" src="Wave 2.png" alt="Wave"></img>
-          <img className="wave-3" src="Wave 3.png" alt="Wave"></img>
+          <img className="wave-1" src="Wave 1 (1).png" alt="Wave"></img>
+          <img className="wave-2" src="Wave 2 (1).png" alt="Wave"></img>
+          <img className="wave-3" src="Wave 3 (1).png" alt="Wave"></img>
         </div>
       </div>
     );

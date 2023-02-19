@@ -4,6 +4,7 @@ html {
     rgba(254, 185, 95, 0.212),
     rgba(45, 200, 246)
   );
+  overflow: hidden;
 }
 
 .title {
@@ -15,7 +16,7 @@ html {
 }
 
 .title.maintext {
-  padding-top: 275px;
+  padding-top: 15%;
   color: #2431ae;
   margin: 10px;
   font-size: 5rem;
@@ -38,6 +39,35 @@ html {
   width: 200px;
   margin-top: 20px;
   font-size: 1.5rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn:active {
+  margin-top: 25px;
+}
+
+.btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 5px 20px white;
+}
+
+.btn:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 10px;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
 }
 
 .sun-img {
@@ -48,12 +78,9 @@ html {
 }
 
 .sun-ray {
-  overflow: hidden;
   position: absolute;
-  top: 0;
-  left: 0;
-  top: -100px;
-  left: -100px;
+  top: -120px;
+  left: -120px;
   border-radius: 50%;
   background-color: white;
   z-index: -1;
@@ -61,26 +88,26 @@ html {
 .r-one {
   width: 300px;
   height: 300px;
-  opacity: 1;
+  opacity: 0.5;
   animation: ray2 5s infinite;
 }
 .r-two {
   width: 325px;
   height: 325px;
-  opacity: 1;
-  animation: ray3 7s infinite;
+  opacity: 0.5;
+  animation: ray3 5s infinite;
 }
 .r-three {
   width: 310px;
   height: 310px;
-  opacity: 1;
-  animation: ray4 4s infinite;
+  opacity: 0.5;
+  animation: ray4 5s infinite;
 }
 .r-four {
   width: 350px;
   height: 350px;
-  opacity: 1;
-  animation: ray5 6s infinite;
+  opacity: 0.5;
+  animation: ray5 5s infinite;
 }
 
 @keyframes ray2 {
@@ -88,8 +115,8 @@ html {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
-    opacity: 0;
+    transform: scale(1.3);
+    opacity: 0.1;
   }
   100% {
     transform: scale(1);
@@ -101,8 +128,8 @@ html {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
-    opacity: 0;
+    transform: scale(1.3);
+    opacity: 0.1;
   }
   100% {
     transform: scale(1);
@@ -114,8 +141,8 @@ html {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
-    opacity: 0;
+    transform: scale(1.3);
+    opacity: 0.1;
   }
   100% {
     transform: scale(1);
@@ -127,8 +154,8 @@ html {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
-    opacity: 0;
+    transform: scale(1.3);
+    opacity: 0.1;
   }
   100% {
     transform: scale(1);
@@ -138,14 +165,68 @@ html {
 .wave-1 {
   position: absolute;
   bottom: 0;
+  left: 0;
+  width: 100vw;
+  animation: wave1 6s infinite;
 }
 
 .wave-2 {
   position: absolute;
   bottom: 0;
+  left: 0;
+  width: 100vw;
+  animation: wave2 5s infinite;
 }
 
 .wave-3 {
   position: absolute;
   bottom: 0;
+  left: 0;
+  width: 100vw;
+  animation: wave3 4s infinite;
+}
+
+@keyframes wave1 {
+  0% {
+    transform: scale(1);
+    transform: translateX(0);
+  }
+  50% {
+    transform: scale(1.1);
+    transform: translateX(100);
+  }
+  100% {
+    transform: scale(1);
+    transform: translateX(0);
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    transform: scale(1);
+    transform: translateX(0);
+  }
+  50% {
+    transform: scale(1.1);
+    transform: translateX(-100);
+  }
+  100% {
+    transform: scale(1);
+    transform: translateX(0);
+  }
+}
+
+@keyframes wave3 {
+  0% {
+    transform: scale(1);
+    transform: translateX(0);
+  }
+  50% {
+    transform: scale(1.1);
+    transform: translateX(100);
+  }
+  100% {
+    transform: scale(1);
+    transform: translateX(0);
+  }
 }
