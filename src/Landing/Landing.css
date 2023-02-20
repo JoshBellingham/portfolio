@@ -39,12 +39,12 @@ html {
   width: 200px;
   margin-top: 20px;
   font-size: 1.5rem;
-  transition-duration: 0.4s;
+  transition-duration: 10ms;
   cursor: pointer;
 }
 
 .btn:active {
-  margin-top: 25px;
+  margin-top: 21px;
 }
 
 .btn:after {

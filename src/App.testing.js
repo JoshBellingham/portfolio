@@ -1,15 +1,30 @@
-import React from "react";
-import "./Landing.css";
+import React, { useState } from "react";
+import "./App.css";
+import Landing from "./Landing/Landing";
+import Portfolio from "./Portfolio/Portfolio";
+// import Projects from "./Projects";
 
+function AppTest() {
+  //States
+  const [view, setView] = useState("Landing");
 
-export default function Landing () {
+  console.log(view);
 
+  function changeView() {
+    if (view === "Landing") {
+      setView("Portfolio");
+    } else if (view === "Portfolio") {
+      setView("Landing");
+    }
+  }
+
+  if (view === "Landing") {
     return (
-      <div className="container">
+      <div className="App">
         <div className="title">
           <h1 className="title maintext">Josh Bellingham</h1>
           <h2 className="title subtext">Junior Web Developer</h2>
-          <button className="title btn">
+          <button className="title btn" onClick={changeView}>
             <span>Welcome</span>
           </button>
         </div>
@@ -27,4 +42,9 @@ export default function Landing () {
         </div>
       </div>
     );
+  } else if (view === "Portfolio") {
+    return <Portfolio />;
+  }
 }
+
+export default AppTest;
