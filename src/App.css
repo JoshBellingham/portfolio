@@ -6,6 +6,7 @@
     rgba(45, 200, 246)
   );
   overflow: hidden;
+  position: relative;
 }
 
 .title {
@@ -49,10 +50,8 @@
 }
 
 .btn:active {
-  margin-top: 21px;
+  transform: translateY(4px);
 }
-
-
 
 .sun-img {
   scale: 90%;
@@ -152,7 +151,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  /* animation: wave1 6s infinite; */
+  animation: wave1 5s infinite;
 }
 
 .wave-2 {
@@ -160,7 +159,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  /* animation: wave2 5s infinite; */
+  animation: wave2 4s infinite;
 }
 
 .wave-3 {
@@ -168,51 +167,41 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  /* animation: wave3 4s infinite; */
+  animation: wave3 3s infinite;
 }
 
-/* @keyframes wave1 {
+@keyframes wave1 {
   0% {
     transform: scale(1);
-    transform: translateX(0);
   }
   50% {
     transform: scale(1.1);
-    transform: translateX(100);
   }
   100% {
     transform: scale(1);
-    transform: translateX(0);
   }
 }
 
 @keyframes wave2 {
   0% {
     transform: scale(1);
-    transform: translateX(0);
   }
   50% {
     transform: scale(1.1);
-    transform: translateX(-100);
   }
   100% {
     transform: scale(1);
-    transform: translateX(0);
   }
 }
 
 @keyframes wave3 {
   0% {
     transform: scale(1);
-    transform: translateX(0);
   }
   50% {
     transform: scale(1.1);
-    transform: translateX(100);
-    
   }
   100% {
     transform: scale(1);
-    transform: translateX(0);
   }
-} */
+}

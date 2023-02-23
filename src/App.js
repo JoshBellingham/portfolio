@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./App.css";
 import Portfolio from "./Portfolio/Portfolio";
+// import PortfolioTest from "./Portfolio/Portfolio.testing";
 // import Projects from "./Projects";
 
-function AppTest() {
+export default function App() {
   //States
-  const [view, setView] = useState("Landing");
+  const [view, setView] = useState("Portfolio");
 
   console.log(view);
 
@@ -13,9 +14,9 @@ function AppTest() {
     if (view === "Landing") {
       setView("Portfolio");
     } else if (view === "Portfolio") {
-      setView("Landing");
+      setView("Landing")
     }
-  }
+  } 
 
   // Use wait logic to perform animation function then execute changeView?
 
@@ -37,15 +38,19 @@ function AppTest() {
           <div className="sun-ray r-four"></div>
         </div>
         <div className="waves">
+          <div className="wave-wrapper">
           <img className="wave-1" src="Wave 1 (1).png" alt="Wave"></img>
+          </div>
+          <div className="wave-wrapper">
           <img className="wave-2" src="Wave 2 (1).png" alt="Wave"></img>
+          </div>
+          <div className="wave-wrapper">
           <img className="wave-3" src="Wave 3 (1).png" alt="Wave"></img>
+          </div>
         </div>
       </div>
     );
   } else if (view === "Portfolio") {
-    return <Portfolio />;
+    return <Portfolio view={view} setView={setView} />;
   }
 }
-
-export default AppTest;

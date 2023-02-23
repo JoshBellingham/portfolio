@@ -3,9 +3,9 @@ import "./Portfolio.css";
 import Footer from "../Footer/Footer";
 import App from "../App";
 
-export default function Portfolio(props) {
+export default function PortfolioTest(props) {
   //States
-  const { view, setView } = props;
+  const {view, setView} = props;
 
   const changeView = () => {
     if (view === "Portfolio") {
@@ -19,15 +19,15 @@ export default function Portfolio(props) {
         <nav className="navigation">
           <h2 className="title">Josh Bellingham</h2>
           <div className="nav-buttons">
-            <button href="#anchor-name" className="nav-btn" onClick={changeView}>
+            <button className="nav-btn" onClick={changeView}>
               Home
             </button>
-            <a href="#my-work" className="nav-btn">
+            <button href="#" className="nav-btn">
               My Work
-            </a>
-            <a href="#contact" className="nav-btn">
+            </button>
+            <button href="#" className="nav-btn">
               Contact
-            </a>
+            </button>
           </div>
         </nav>
 
@@ -47,7 +47,7 @@ export default function Portfolio(props) {
             dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Lacus vel facilisis
             volutpat est velit egestas dui id. At urna condimentum mattis
-            pellentesque id nibh tortor id.
+            pellentesque id nibh tortor id. 
           </p>
           <img
             className="Headshot"
@@ -56,7 +56,7 @@ export default function Portfolio(props) {
           />
         </div>
 
-        <h1 id="my-work" className="header">My Work</h1>
+        <h1 className="header">My Work</h1>
         <div className="project-container">
           <div className="project-left">
             <img className="project-img1" src="Sun.png" alt="" />
@@ -74,6 +74,15 @@ export default function Portfolio(props) {
               tristique. sed sed risus. Lorem ipsum dolor sit amet, consectetur
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
+              <br></br>
+              <br></br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus
+              vel facilisis volutpat est velit egestas dui id. At urna
+              condimentum mattis pellentesque id nibh tortor id. Sapien et
+              ligula ullamcorper malesuada proin libero. Lacus laoreet non
+              curabitur gravida arcu ac. Tempus egestas sed sed risus pretium
+              quam vulputate. 
             </p>
             <div className="project-btns">
               <button className="btn proj">Live Demo</button>
@@ -89,12 +98,16 @@ export default function Portfolio(props) {
               ligula ullamcorper malesuada proin libero. Lacus laoreet non
               curabitur gravida arcu ac. Tempus egestas sed sed risus pretium
               quam vulputate. Eget dolor morbi non arcu risus quis varius quam
-              quisque. Eget aliquet nibh praesent tristique magna sit amet purus
-              gravida. Egestas pretium aenean pharetra magna ac placerat
-              vestibulum. Ornare arcu dui vivamus arcu felis bibendum ut
-              tristique. sed sed risus. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              quisque. 
+              <br></br>
+              <br></br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus
+              vel facilisis volutpat est velit egestas dui id. At urna
+              condimentum mattis pellentesque id nibh tortor id. Sapien et
+              ligula ullamcorper malesuada proin libero. Lacus laoreet non
+              curabitur gravida arcu ac. Tempus egestas sed sed risus pretium
+              quam vulputate. 
             </p>
             <img className="project-img2" src="Sun.png" alt="" />
             <div className="project-btns">
