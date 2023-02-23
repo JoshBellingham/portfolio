@@ -2,7 +2,6 @@ import React from "react";
 import "./Portfolio.css";
 import Footer from "../Footer/Footer";
 import App from "../App";
-import Headshot from '../../public/headshot.jpg';
 
 export default function Portfolio(props) {
   //States
@@ -52,7 +51,7 @@ export default function Portfolio(props) {
           </p>
           <img
             className="Headshot"
-            src={Headshot}
+            src="../Headshot.jpg"
             alt="Josh Bellingham"
           />
         </div>
