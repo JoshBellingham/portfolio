@@ -1,9 +1,9 @@
 # TO DO List
 
-- Fix button click animation
--Finish adding ocean sound
--Add sound toggle button
--Improve responsiveness of website
--Transition animation from landing page to portfolio
--Portfolio navbar
--Turn landing page into seperate component and adjust view states?
+1. Fix button click animation
+2. Finish adding ocean sound
+3. Add sound toggle button
+4. Improve responsiveness of website
+5. Transition animation from landing page to portfolio
+6. Portfolio navbar
+7. Turn landing page into seperate component and adjust view states?
