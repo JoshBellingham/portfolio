@@ -51,7 +51,7 @@ export default function Portfolio(props) {
           </p>
           <img
             className="Headshot"
-            src="./portfolio/Headshot-jpg.jpg"
+            src="Headshot.jpg"
             alt="Josh Bellingham"
           />
         </div>
@@ -59,7 +59,7 @@ export default function Portfolio(props) {
         <h1 id="my-work" className="header">My Work</h1>
         <div className="project-container">
           <div className="project-left">
-            <img className="project-img1" src="Sun.png" alt="" />
+            <img className="project-img1" src="Sun.png" alt="sun" />
             <p className="project-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus
@@ -96,7 +96,7 @@ export default function Portfolio(props) {
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
             </p>
-            <img className="project-img2" src="Sun.png" alt="" />
+            <img className="project-img2" src="Sun.png" alt="sun" />
             <div className="project-btns">
               <button className="btn proj">Live Demo</button>
               <button className="btn proj">View On Github</button>
