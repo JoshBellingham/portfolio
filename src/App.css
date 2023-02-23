@@ -59,6 +59,7 @@
   position: absolute;
   top: -10px;
   left: -10px;
+  z-index: 1;
 }
 
 .sun-ray {
@@ -67,7 +68,7 @@
   left: -120px;
   border-radius: 50%;
   background-color: white;
-  z-index: -1;
+  z-index: -0.5;
 }
 .r-one {
   width: 300px;
@@ -151,7 +152,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  animation: wave1 6s infinite;
+  /* animation: wave1 6s infinite; */
 }
 
 .wave-2 {
@@ -159,7 +160,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  animation: wave2 5s infinite;
+  /* animation: wave2 5s infinite; */
 }
 
 .wave-3 {
@@ -167,10 +168,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  animation: wave3 4s infinite;
+  /* animation: wave3 4s infinite; */
 }
 
-@keyframes wave1 {
+/* @keyframes wave1 {
   0% {
     transform: scale(1);
     transform: translateX(0);
@@ -208,9 +209,10 @@
   50% {
     transform: scale(1.1);
     transform: translateX(100);
+    
   }
   100% {
     transform: scale(1);
     transform: translateX(0);
   }
-}
+} */
