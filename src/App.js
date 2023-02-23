@@ -6,7 +6,7 @@ import Portfolio from "./Portfolio/Portfolio";
 
 export default function App() {
   //States
-  const [view, setView] = useState("Portfolio");
+  const [view, setView] = useState("Landing");
 
   console.log(view);
 
