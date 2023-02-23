@@ -9,13 +9,15 @@ function AppTest() {
 
   console.log(view);
 
-  function changeView() {
+  const changeView = () => {
     if (view === "Landing") {
       setView("Portfolio");
     } else if (view === "Portfolio") {
       setView("Landing");
     }
   }
+
+  // Use wait logic to perform animation function then execute changeView?
 
   if (view === "Landing") {
     return (

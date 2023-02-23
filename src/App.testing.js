@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import Landing from "./Landing/Landing";
+// import Landing from "./Landing/Landing";
 import Portfolio from "./Portfolio/Portfolio";
 // import Projects from "./Projects";
 
