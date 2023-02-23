@@ -54,7 +54,8 @@
 }
 
 .sun-img {
-  scale: 90%;
+  max-width: 9vw;
+  height: auto;
   position: absolute;
   top: -10px;
   left: -10px;

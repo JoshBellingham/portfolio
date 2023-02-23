@@ -69,7 +69,8 @@
   margin-left: 10%;
   margin-right: 15vw;
   border-radius: 10px 10px 10px 10px;
-  scale: 1;
+  max-width: 21vw;
+  height: auto;
 }
 
 .project-container {
@@ -81,7 +82,7 @@
 
 .project-left {
   display: grid;
-  grid-template-columns: 550px 30vw;
+  grid-template-columns: 30vw 30vw;
   justify-items: start;
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -102,21 +103,25 @@
 }
 
 .project-btns {
-  width: 480px;
+  width: 25vw;
 }
 
 .btn.proj {
   margin-right: 1vw;
+  width: 11vw;
+  height: auto;
 }
 
 .project-img1 {
   border: solid red;
-  width: 480px;
+  width: 25vw;
+  height: auto;
 }
 
 .project-img2 {
   border: solid red;
-  width: 480px;
+  width: 25vw;
+  height: auto;
 }
 
 .project-text {
