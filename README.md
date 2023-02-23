@@ -1,6 +1,6 @@
 # TO DO List
 
-1. Fix button click animation /br
+1. Fix button click animation
 2. Finish adding ocean sound
 3. Add sound toggle button
 4. Improve responsiveness of website
