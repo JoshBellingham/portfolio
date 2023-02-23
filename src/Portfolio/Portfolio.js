@@ -51,7 +51,7 @@ export default function Portfolio(props) {
           </p>
           <img
             className="Headshot"
-            src="./Headshot-jpg.jpg"
+            src="./portfolio/Headshot-jpg.jpg"
             alt="Josh Bellingham"
           />
         </div>

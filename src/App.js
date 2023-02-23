@@ -19,6 +19,7 @@ export default function App() {
   } 
 
   // Use wait logic to perform animation function then execute changeView?
+  //setTimeout & Translate Y 1000px with easeIn then Sun Rays take up page
 
   if (view === "Landing") {
     return (
