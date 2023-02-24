@@ -26,7 +26,7 @@ export default function App() {
       <div className="App">
         <div className="title">
           <h1 className="title maintext">Josh Bellingham</h1>
-          <h2 className="title subtext">Junior Web Developer</h2>
+          <h2 className="title subtext">Front End Developer</h2>
           <button className="title btn" onClick={changeView}>
             <span>Welcome</span>
           </button>
