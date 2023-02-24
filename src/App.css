@@ -17,18 +17,43 @@
   height: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  .title {
+    margin-top: 15vmin;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    margin-top: 25vmin;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    margin-top: 35vmin;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    margin-top: 50vmin;
+  }
+}
+
+
 .title.maintext {
   padding-top: 15%;
   color: #2431ae;
   margin: 10px;
-  font-size: 4.25vw;
+  font-size: 10vmin;
 }
 
 .title.subtext {
   color: #11a9cb;
   margin-bottom: 20px;
   margin-top: 0px;
-  font-size: 2.25vw;
+  font-size: 5vmin;
   font-style: thin;
 }
 
@@ -37,16 +62,16 @@
   border: solid white 1px;
   color: white;
   border-radius: 10px;
-  margin-top: 20px;
-  font-size: 1.5rem;
+  margin-top: 1vmin;
   transition-duration: 10ms;
   cursor: pointer;
 }
 
 .title.btn {
   padding: 0;
-  height: 50px;
-  width: 200px;
+  height: 7vmin;
+  width: 30vmin;
+  font-size: 3vmin;
 }
 
 .btn:active {
@@ -54,7 +79,7 @@
 }
 
 .sun-img {
-  width: 9vw;
+  width: 20vmin;
   height: auto;
   position: absolute;
   top: -10px;
@@ -64,34 +89,34 @@
 
 .sun-ray {
   position: absolute;
-  top: -120px;
-  left: -120px;
+  top: -14vmin;
+  left: -14vmin;
   border-radius: 50%;
   background-color: white;
   z-index: -0.5;
 }
 .r-one {
-  width: 300px;
-  height: 300px;
-  opacity: 0.5;
+  width: 35vmin;
+  height: 35vmin;
+  opacity: 0.4;
   animation: ray2 5s infinite;
 }
 .r-two {
-  width: 325px;
-  height: 325px;
-  opacity: 0.5;
+  width: 37.5vmin;
+  height: 37.5vmin;
+  opacity: 0.4;
   animation: ray3 5s infinite;
 }
 .r-three {
-  width: 310px;
-  height: 310px;
-  opacity: 0.5;
+  width: 40vmin;
+  height: 40vmin;
+  opacity: 0.4;
   animation: ray4 5s infinite;
 }
 .r-four {
-  width: 350px;
-  height: 350px;
-  opacity: 0.5;
+  width: 42.5vmin;
+  height: 42, 5vmin;
+  opacity: 0.4;
   animation: ray5 5s infinite;
 }
 
@@ -152,6 +177,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  max-height: 200px;
   animation: wave1 5s infinite;
 }
 
@@ -160,6 +186,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  max-height: 200px;
   animation: wave2 4s infinite;
 }
 
@@ -168,6 +195,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  max-height: 200px;
   animation: wave3 3s infinite;
 }
 
